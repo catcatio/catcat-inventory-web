@@ -2,10 +2,15 @@
 CatCat inventory web version
 
 ### To develop
-1. Prisma server
+1. Up `prisma`, `postgres`, `pgadmin`
     ```
     cd dev
     . up
+    ```
+1. Prisma server
+    ```
+    cd server
+    yarn dev
     ```
 1. Apollo web client
     ```
