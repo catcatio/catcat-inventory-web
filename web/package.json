@@ -39,7 +39,7 @@
     "precommit": "yarn run lint && yarn run flow",
     "flow": "flow",
     "lint": "eslint .",
-    "start": "react-scripts start",
+    "start": "PORT=8080 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",

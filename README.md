@@ -15,7 +15,7 @@ CatCat inventory web version
     yarn dev
     ```
 1. Apollo web client
-    ![image](https://user-images.githubusercontent.com/97060/46247638-8ac24400-c438-11e8-9b19-880b92cf0e41.png)
+![image](https://user-images.githubusercontent.com/97060/46247787-b0e8e380-c43a-11e8-8550-c83d7a2f2b8e.png)
     ```
     cd web
     yarn install
