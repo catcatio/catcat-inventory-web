@@ -25,3 +25,5 @@ CatCat inventory web version
     - open `http://localhost:5050`
     - Connection : `postgres`
     - SSL : `Disable`
+
+![image](https://user-images.githubusercontent.com/97060/46247600-e8a25c00-c437-11e8-9fc0-43bf77b13d18.png)
