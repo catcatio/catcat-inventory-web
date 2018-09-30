@@ -34,3 +34,6 @@ https://www.prisma.io/docs/tutorials/bootstrapping-boilerplates/react-(fullstack
     - Connection : `postgres`
     - SSL : `Disable`
     
+## TODO
+- [ ] Pagination : https://www.prisma.io/docs/1.17/prisma-graphql-api/queries-qwe1/#pagination
+- [ ] Draggable : https://github.com/atlassian/react-beautiful-dnd
