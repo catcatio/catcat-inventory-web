@@ -6,6 +6,7 @@ type Post {
   title: String!
   text: String!
   author: User!
+  coverUrl: String
 }
 
 type User {

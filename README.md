@@ -33,7 +33,39 @@ https://www.prisma.io/docs/tutorials/bootstrapping-boilerplates/react-(fullstack
     - open `http://localhost:5050`
     - Connection : `postgres`
     - SSL : `Disable`
-    
+- - -
+### To update data model (e.g. add `coverUrl`)
+> ./web/server/database/datamodel.graphql
+Add `coverUrl`
+```
+type Post {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  isPublished: Boolean! @default(value: "false")
+  title: String!
+  text: String!
+  author: User!
+  coverUrl: String
+}
+```
+Then re deploy
+```
+prisma deploy
+prisma generate
+```
+Then add missing data
+```
+mutation {
+  updateManyPosts(
+    where: { coverUrl: null }
+    data: { coverUrl: "https://avatars1.githubusercontent.com/u/36980416" }
+  ) {
+    count
+  }
+}
+```
+- - - 
 ## TODO
 - [ ] Pagination : https://www.prisma.io/docs/1.17/prisma-graphql-api/queries-qwe1/#pagination
 - [ ] Draggable : https://github.com/atlassian/react-beautiful-dnd
